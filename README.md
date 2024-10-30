@@ -6,4 +6,6 @@
 ## It's just gm_construct
 
 - It doesn't have the funny secret room, sorry :(
-- Skybox being worked on
+- Basement fishing could not be achieved because of the fishing rod behavior
+- Added the Boat NPC (enjoy gambling!)
+- Added Chalk Spots inside the towers
