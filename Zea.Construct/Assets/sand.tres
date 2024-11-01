@@ -1,5 +1,6 @@
 [gd_resource type="StreamTexture" format=2]
 
 [resource]
+resource_name = "_albedo"
 flags = 18
 load_path = "res://.import/sand.png-19869e85ff0ebd3cba27b34f314e0e33.stex"

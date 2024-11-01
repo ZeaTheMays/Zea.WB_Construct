@@ -1,5 +1,6 @@
 [gd_resource type="StreamTexture" format=2]
 
 [resource]
+resource_name = "_albedo"
 flags = 18
 load_path = "res://.import/grass_small.png-d5d4a89809990957e1d386ce7042d2f2.stex"

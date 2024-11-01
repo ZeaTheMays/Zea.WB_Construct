@@ -2,13 +2,13 @@ extends WorldEnvironment
 
 var des_fog = 125
 var des_fog_end = 500
-var des_color = Color("#bccce6")
+var des_color = Color("#c2d9ff")
 var des_light = 0.12
 
 var rain = false
 
-var default_fog = 125
-var default_fog_end = 500
+var default_fog = 300
+var default_fog_end = 1000
 
 func _ready():
 	PlayerData.connect("_rain_toggle", self, "_rain_env")
@@ -41,10 +41,10 @@ func _rain_env(toggle, force = false):
 	else :
 		des_fog = default_fog
 		des_fog_end = default_fog_end
-		des_color = Color("#bccce6")
+		des_color = Color("#c2d9ff")
 		des_light = 0.12
 
 func _dist_update():
-	default_fog = [125, 50, 15, 6][PlayerData.player_options.view_distance]
-	default_fog_end = [500, 200, 75, 12][PlayerData.player_options.view_distance]
+	default_fog = [300, 50, 15, 6][PlayerData.player_options.view_distance]
+	default_fog_end = [1000, 200, 75, 12][PlayerData.player_options.view_distance]
 	_rain_env(rain, true)
