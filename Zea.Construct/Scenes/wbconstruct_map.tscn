@@ -28,7 +28,7 @@ fog_height_min = 15.3
 fog_height_max = 49.3
 glow_enabled = true
 
-[node name="wb_construct" type="Spatial"]
+[node name="main_map" type="Spatial"]
 script = ExtResource( 12 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -42,6 +42,9 @@ light_energy = 0.12
 light_negative = true
 
 [node name="spawn_position" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 82.2478, 2.72748, -34.8611 )
+
+[node name="tutorial_spawn_position" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 82.2478, 2.72748, -34.8611 )
 
 [node name="zones" type="Node" parent="."]
